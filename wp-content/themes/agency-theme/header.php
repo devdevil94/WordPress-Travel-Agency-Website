@@ -8,22 +8,22 @@
 
 	<body <?php body_class(); ?>>
 		<div class="header-nightsky">
-	        <nav class="navbar navbar-default">
+	        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	            <a class="navbar-brand" href="#">Omanova</a>
-	           
-	            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	            </button>
 
-	            <div class="collapse nav-collapse" id="myNavbar">
-	                <div class="navbar-nav">
-	                    <a class="nav-item nav-link active" href="#">HOME</a>
-	                    <a class="nav-item nav-link" href="#">NEWS <span class="caret"></span></a>
-	                    <a class="nav-item nav-link"" href="#">DEMOS<span class="caret"></span></a>
-	            	</div>
-	            </div>
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	
+		  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				    <div class="navbar-nav">
+				      	<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+				    	<a class="nav-item nav-link" href="#">Features</a>
+				      	<a class="nav-item nav-link" href="#">Pricing</a>
+				      	<a class="nav-item nav-link disabled" href="#">Disabled</a>
+				    </div>
+			  </div>
+
 	        </nav>
 	        <div class="hero">
 	            <h1>This is a Bootstrap header</h1>

@@ -8,29 +8,27 @@
 
 	<body <?php body_class(); ?>>
 		<div class="header-nightsky">
-	        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	            <a class="navbar-brand" href="#">Omanova</a>
 
 			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
+			    	<span class="navbar-toggler-icon"></span>
 			  	</button>
 			  	
-		  		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				    <div class="navbar-nav navbar-right">
-				      	<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				    	<a class="nav-item nav-link" href="#">Features</a>
-				      	<a class="nav-item nav-link" href="#">Pricing</a>
-				      	<a class="nav-item nav-link disabled" href="#">Disabled</a>
-				    </div>
-			  </div>
+		  		<div class="collapse navbar-collapse navbar-nav ml-auto justify-content-end" id="navbarNavAltMarkup">
+			      	<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+			    	<a class="nav-item nav-link" href="#">Features</a>
+			      	<a class="nav-item nav-link" href="#">Pricing</a>
+			      	<a class="nav-item nav-link" href="#">Disabled</a>
+			  	</div>
+        	</nav>
 
-	        </nav>
 	        <div class="hero">
 	            <h1>This is a Bootstrap header</h1>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut tempor enim.</p>
 	            <div class="btn btn-primary">Learn more about us</div>
 	            <div class="btn btn-primary">Contact us</div>
 	        </div>
-    	</div>
+		</div>
 	</body>
 </html>

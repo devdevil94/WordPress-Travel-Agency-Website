@@ -4,16 +4,11 @@ body {
 
 .header-nightsky {
     color: white;
-    background: url("../../assets/img/nightsky.jpg") no-repeat;
+    background: url("../img/nightsky.jpg") no-repeat;
     background-size: cover;
     background-position: bottom;
-    padding-bottom: 100px;
-}
-
-.header-nightsky .navbar-nav>li>a {
-    color: white;
-    font-size: 18px;
-    border-radius: 10px;
+    padding-bottom: 0px;
+    
 }
 
 .header-nightsky .navbar {
@@ -27,26 +22,6 @@ body {
     border: none;
 }
 
-.header-nightsky .navbar-default .navbar-nav>.open>a,
-.header-nightsky .navbar-default .navbar-nav>.open>a:focus,
-.header-nightsky .navbar-default .navbar-nav>.open>a:hover {
-    color: #ccc;
-    background-color: transparent;
-}
-
-.header-nightsky .nav>li>a:focus,
-.header-nightsky .nav>li>a:hover {
-    color: #ccc;
-    background-color: transparent;
-}
-
-.header-nightsky .navbar-nav>li {
-    margin-right: 20px;
-}
-
-.header-nightsky .navbar-nav {
-   margin-top: 12px;
-}
 
 .header-nightsky .navbar-toggle {
     background-color: transparent !important;

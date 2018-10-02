@@ -8,7 +8,6 @@ body {
     background-size: cover;
     background-position: bottom;
     padding-bottom: 0px;
-    
 }
 
 .header-nightsky .navbar {
@@ -17,7 +16,7 @@ body {
     padding-bottom: 20px;
     width: 100%;
     border-bottom:none;
-    background-color: transparent;
+    background: transparent !important;
     min-width: 300px;
     border: none;
 }

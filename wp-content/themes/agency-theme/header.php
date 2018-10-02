@@ -11,25 +11,33 @@
 			<a class="navbar-brand" href="#">Navbar</a>
 
 			<div class="hero">
-	            <h1>This is a Bootstrap header</h1>
+	            <h1>Tagline for theCompany</h1>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut tempor enim.</p>
-	            <div class="btn btn-primary">Learn more about us</div>
-	            <div class="btn btn-primary">Contact us</div>
 	        </div>
 
-        	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        	<nav class="navbar navbar-expand-lg bg-transparent">
 			  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 
 			  <div class="nav navbar-collapse collapse justify-content-center" id="navbarNav">
-			    <div class="navbar-nav mx-auto">
-			      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-			      <a class="nav-item nav-link" href="#">Packages</a>
-			      <a class="nav-item nav-link" href="#">Attractions</a>
-			      <a class="nav-item nav-link" href="#">About Us</a>
-			      <a class="nav-item nav-link" href="#">Contact</a>
-			    </div>
+			    <ul class="navbar-nav mx-auto bg-transparent">
+		      		<li class="nav-item">
+	                	<a class="nav-link active" href="#">Home</a>
+	            	</li>
+		            <li class="nav-item">
+		                <a class="nav-link" href="#">Packages</a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link" href="#">Attractions</a>
+		            </li>	
+	            	<li class="nav-item">
+		                <a class="nav-link" href="#">About</a>
+		            </li>
+	            	<li class="nav-item">
+		                <a class="nav-link" href="#">Contact Us</a>
+		            </li>		    
+	        	</ul>
 			  </div>
 			</nav>
 	        

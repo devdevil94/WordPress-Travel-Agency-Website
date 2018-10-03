@@ -7,7 +7,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<header class="header-nightsky d-flex flex-column justify-content-end">
+		<header class="header-nightsky d-flex flex-column justify-content-end" style="background-image: url(<?php echo get_theme_file_uri('img/anfal-shamsudeen-358868-unsplash.jpg'); ?>)">
 			<a class="navbar-brand" href="#">Navbar</a>
 
 			<div class="hero">
@@ -22,20 +22,20 @@
 
 			  <div class="nav navbar-collapse collapse justify-content-center" id="navbarNav">
 			    <ul class="navbar-nav mx-auto bg-transparent">
-		      		<li class="nav-item">
-	                	<a class="nav-link active" href="#">Home</a>
+		      		<li class="nav-item ">
+	                	<a class="nav-link text-white active" href="#">Home</a>
 	            	</li>
 		            <li class="nav-item">
-		                <a class="nav-link" href="#">Packages</a>
+		                <a class="nav-link text-white" href="#">Packages</a>
 		            </li>
 		            <li class="nav-item">
-		                <a class="nav-link" href="#">Attractions</a>
+		                <a class="nav-link text-white" href="#">Attractions</a>
 		            </li>	
 	            	<li class="nav-item">
-		                <a class="nav-link" href="#">About</a>
+		                <a class="nav-link text-white" href="#">About</a>
 		            </li>
 	            	<li class="nav-item">
-		                <a class="nav-link" href="#">Contact Us</a>
+		                <a class="nav-link text-white" href="#">Contact Us</a>
 		            </li>		    
 	        	</ul>
 			  </div>

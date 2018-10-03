@@ -4,7 +4,6 @@ body {
 
 .header-nightsky {
     color: white;
-    background: url("../img/nightsky.jpg") no-repeat;
     background-size: cover;
     background-position: bottom;
     padding-bottom: 0px;
@@ -16,19 +15,18 @@ body {
     padding-bottom: 20px;
     width: 100%;
     border-bottom:none;
-    background: transparent !important;
     min-width: 300px;
     border: none;
 }
 
 
-.header-nightsky .navbar-toggle {
+.header-nightsky .navbar .navbar-toggler {
     background-color: transparent !important;
     margin-top: 20px;
     border: 1px solid #fff;
 }
 
-.header-nightsky .navbar-toggle .icon-bar {
+.header-nightsky .navbar .navbar-toggler .navbar-toggler-icon {
     background-color: white;
 }
 
@@ -196,7 +194,6 @@ body {
     margin-bottom: 36px;
 }
 
-
 .header-nightsky .hero p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 22px;
@@ -206,36 +203,8 @@ body {
     line-height: 1.5;
 }
 
-.header-nightsky .btn-primary {
-    color: #fff;
-    background-color: transparent;
-    border-color: #fffbfb !important;
-    outline:none;
-    margin-right: 20px;
-    margin-top: 20px;
-    font-size: 24px;
-    padding: 18px 24px;
-    transition:0.2s background-color;
-}
-
-.header-nightsky .btn-primary:hover {
-    background-color:rgba(255,255,255,0.1);
-}
-
-.header-nightsky .btn-primary:active {
-    transform:translateY(1px);
-}
-
 @media screen and (max-width: 767px) {
 
-    .header-nightsky .navbar-default .navbar-nav .open .dropdown-menu>li>a{
-        color: #fff;
-        font-size: 16px;
-    }
-
-    .header-nightsky .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
-        color: #ccc;
-    }
 
     .header-nightsky .navbar-collapse {
         margin-left: 20px;

@@ -3,6 +3,7 @@
 	function bootstrap_files(){
 		wp_enqueue_style('bootstrap-css','//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
 		wp_enqueue_script('bootstrap-js','//code.jquery.com/jquery-3.3.1.slim.min.js', array( 'jquery' ), true);
+		wp_enqueue_style('font_awsome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	}
 
 	function custom_styles(){

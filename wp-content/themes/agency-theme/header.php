@@ -11,7 +11,7 @@
 			<a class="navbar-brand" href="#">Navbar</a>
 
 			<div class="hero">
-	            <h1>Tagline for theCompany</h1>
+	            <h1>Tagline for the Company</h1>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut tempor enim.</p>
 	        </div>
 

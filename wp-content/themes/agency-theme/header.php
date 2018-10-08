@@ -7,7 +7,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<header class="d-flex flex-column justify-content-end" style="background-image: url(<?php echo get_theme_file_uri('img/anfal-shamsudeen-358868-unsplash.jpg'); ?>)">
+		<header class="d-flex flex-column " style="background-image: url(<?php echo get_theme_file_uri('img/anfal-shamsudeen-358868-unsplash.jpg'); ?>)">
 			<a class="navbar-brand" href="#">Navbar</a>
 
 			<div class="hero">

@@ -4,7 +4,7 @@
 		//Package Post Type
 		register_post_type('Package', array( 
 			'has_archive' => true,
-			'supports' => array('title', 'editor', 'excerpt', 'custom-fields'),
+			'supports' => array('title', 'editor', 'excerpt', 'custom-fields', 'thumbnail'),
 			'rewrite' => array('slug' => 'packages'),
 			'public' => true,
 			'labels' => array(

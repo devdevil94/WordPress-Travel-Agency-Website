@@ -44,32 +44,29 @@
 <hr class="w-75 my-5">
 
 <div class="container d-flex justify-content-around">
-	<div class="card" style="width: 18rem;">
-		<img class="card-img-top" src="<?php echo get_theme_file_uri('img/39394819962_616c85c251_o.jpg'); ?>" alt="Card image cap">
-		<div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="btn btn-primary">Go somewhere</a>
-		</div>
-	</div>
+	<?php
+		$popularPackages = new WP_Query(array(
+			'posts_per_page' => 3,
+			'post_type' => 'event',
+			'orderby' => 'title',
+			'order' => 'ASC')
+		);
 
+		while($popularPackages->have_posts()){
+			$popularPackages->the_post();
+	?>
 	<div class="card" style="width: 18rem;">
 		<img class="card-img-top" src="<?php echo get_theme_file_uri('img/39394819962_616c85c251_o.jpg'); ?>" alt="Card image cap">
 		<div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<h5 class="card-title"><?php the_title(); ?></h5>
+			<p class="card-text"><?php echo get_the_excerpt(); ?></p>
 			<a href="#" class="btn btn-primary">Go somewhere</a>
 		</div>
 	</div>
+	<?php 
+		}
+	?>
 
-	<div class="card" style="width: 18rem;">
-		<img class="card-img-top" src="<?php echo get_theme_file_uri('img/39394819962_616c85c251_o.jpg'); ?>" alt="Card image cap">
-		<div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="btn btn-primary">Go somewhere</a>
-		</div>
-	</div>
 </div>
 
 

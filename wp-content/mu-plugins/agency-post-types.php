@@ -2,7 +2,7 @@
 
 	function agency_post_types(){
 		//Package Post Type
-		register_post_type('Package', array( 
+		register_post_type('package', array( 
 			'has_archive' => true,
 			'supports' => array('title', 'editor', 'excerpt', 'custom-fields', 'thumbnail'),
 			'rewrite' => array('slug' => 'packages'),

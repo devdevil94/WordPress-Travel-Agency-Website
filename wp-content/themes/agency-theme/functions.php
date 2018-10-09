@@ -7,11 +7,20 @@
 	}
 
 	function custom_styles(){
-		wp_enqueue_style('main-styles', get_stylesheet_uri());
-		wp_enqueue_style('header-style',get_template_directory_uri().'/css/header_style.css',array(),null,'all');
+		wp_enqueue_style( 'main-style', get_template_directory_uri() . '/style.css', false, '1.0', 'all' );
+		//wp_enqueue_style('header-style',get_template_directory_uri().'/css/header_style.css',array(),null,'all');
 		wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat');
+	}
+
+	function agency_adjust_queries($query){
+		if (!is_admin() AND is_post_type_archive('package') AND $query->is_main_query()) {
+			$query->set('orderby', 'title');
+			$query->set('order', 'ASC');
+			$query->set('posts_per_page', -1);
+		}
 	}
 
 	add_action('wp_enqueue_scripts', 'bootstrap_files');
 	add_action('wp_enqueue_scripts', 'custom_styles');
+	add_action('pre_get_posts', 'agency_adjust_queries');
 ?>

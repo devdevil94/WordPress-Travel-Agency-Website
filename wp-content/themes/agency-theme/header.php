@@ -7,8 +7,8 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<header class="d-flex flex-column " style="background-image: url(<?php echo get_theme_file_uri('img/anfal-shamsudeen-358868-unsplash.jpg'); ?>)">
-			<a class="navbar-brand" href="#">Navbar</a>
+		<header class="h-container d-flex flex-column">
+			<a class="navbar-brand text-white" href="#">Omanova</a>
 
 			<div class="hero">
 	            <h1>Tagline for the Company</h1>
@@ -20,13 +20,13 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div class="nav navbar-collapse collapse justify-content-center" id="navbarNav">
+				<div class="navbar-collapse collapse justify-content-center" id="navbarNav">
 					<ul class="navbar-nav mx-auto bg-transparent">
-						<li class="nav-item ">
-					    	<a class="nav-link text-white active" href="#">Home</a>
+						<li class="nav-item">
+					    	<a class="nav-link text-white active" href="<?php echo site_url(); ?>">Home</a>
 						</li>
 					    <li class="nav-item">
-					        <a class="nav-link text-white" href="#">Packages</a>
+					        <a class="nav-link text-white" href="<?php echo get_post_type_archive_link('package'); ?>">Packages</a>
 					    </li>
 					    <li class="nav-item">
 					        <a class="nav-link text-white" href="#">Attractions</a>

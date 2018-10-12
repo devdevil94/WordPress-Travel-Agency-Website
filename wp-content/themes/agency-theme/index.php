@@ -69,7 +69,7 @@
 	?>
 </div>
 
-
+<hr class="w-75 my-5">
 
 <!-- Testimonials -->
 <div class="testimonials-container section-container section-container-image-bg">
@@ -88,7 +88,7 @@
             		<div class="tab-content">
             			<div role="tabpanel" class="tab-pane fade in active" id="tab1">
             				<div class="testimonial-image">
-            					<img src="assets/img/testimonials/1.jpg" alt="t1">
+            					<img src="<?php echo get_theme_file_uri('img/testimonials/1.jpg'); ?>" alt="t1">
             				</div>
             				<div class="testimonial-text">
                                 <p>
@@ -101,7 +101,7 @@
             			</div>
             			<div role="tabpanel" class="tab-pane fade" id="tab2">
             				<div class="testimonial-image">
-            					<img src="assets/img/testimonials/2.jpg" alt="t2">
+            					<img src="<?php echo get_theme_file_uri('img/testimonials/2.jpg'); ?>" alt="t2">
             				</div>
             				<div class="testimonial-text">
                                 <p>
@@ -114,7 +114,7 @@
             			</div>
             			<div role="tabpanel" class="tab-pane fade" id="tab3">
             				<div class="testimonial-image">
-            					<img src="assets/img/testimonials/3.jpg" alt="t3">
+            					<img src="<?php echo get_theme_file_uri('img/testimonials/3.jpg'); ?>" alt="t3">
             				</div>
             				<div class="testimonial-text">
                                 <p>
@@ -127,7 +127,7 @@
             			</div>
             			<div role="tabpanel" class="tab-pane fade" id="tab4">
             				<div class="testimonial-image">
-            					<img src="assets/img/testimonials/4.jpg" alt="t4">
+            					<img src="<?php echo get_theme_file_uri('img/testimonials/4.jpg'); ?>" alt="t4">
             				</div>
             				<div class="testimonial-text">
                                 <p>

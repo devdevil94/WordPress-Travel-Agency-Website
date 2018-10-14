@@ -10,6 +10,7 @@
 		wp_enqueue_style( 'main-style', get_template_directory_uri() . '/style.css', false, '1.0', 'all' );
 		//wp_enqueue_style('header-style',get_template_directory_uri().'/css/header_style.css',array(),null,'all');
 		wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat');
+		wp_enqueue_script( 'slider', get_template_directory_uri().'/js/slider.js');
 	}
 
 	function agency_adjust_queries($query){

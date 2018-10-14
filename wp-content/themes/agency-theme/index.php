@@ -72,93 +72,57 @@
 <hr class="w-75 my-5">
 
 <!-- Testimonials -->
-<div class="testimonials-container section-container section-container-image-bg">
+<section class="testimonials py-5 text-white px-1 px-md-5 margin-top-xl">
+    <img src="https://raw.githubusercontent.com/solodev/testimonial-slider-fullwidth/master/solodev-logo-stacked.png" class="icon-overlay" />
+
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 testimonials section-description">
-            	<h2>Our Testimonials</h2>
-                <p class="medium-paragraph">Take a look below to learn
-                what our clients are saying about us:</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 testimonial-list">
-            	<div role="tabpanel">
-            		<!-- Tab panes -->
-            		<div class="tab-content">
-            			<div role="tabpanel" class="tab-pane fade in active" id="tab1">
-            				<div class="testimonial-image">
-            					<img src="<?php echo get_theme_file_uri('img/testimonials/1.jpg'); ?>" alt="t1">
-            				</div>
-            				<div class="testimonial-text">
-                                <p>
-                                	"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-                                	Lorem ipsum dolor sit amet, consectetur..."<br>
-                                	<a href="#">Lorem Ipsum, dolor.co.uk</a>
-                                </p>
+            <div class="col-sm-12">
+                <h2 class="pt-2 text-center font-weight-bold">Our Customers Are Seeing Big Results</h2>
+
+                <div class="carousel-controls testimonial-carousel-controls">
+                    <div class="control d-flex align-items-center justify-content-center prev mt-3">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div class="control d-flex align-items-center justify-content-center next mt-3">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+
+                    <div class="testimonial-carousel">
+                        <div class="h5 font-weight-normal one-slide mx-auto">
+                            <div class="testimonial w-100 px-3 text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                <div class="message text-center blockquote w-100">
+                                    "They’ve been consistent throughout the years and grown together with us. Even as they’ve grown, they haven’t lost sight of what they do. Most of their key resources are still with them, which is also a testament to their organization."
+                                </div>
+
+                                <div class="blockquote-footer w-100 text-white">Jim Joe, WebCorpCo</div>
                             </div>
-            			</div>
-            			<div role="tabpanel" class="tab-pane fade" id="tab2">
-            				<div class="testimonial-image">
-            					<img src="<?php echo get_theme_file_uri('img/testimonials/2.jpg'); ?>" alt="t2">
-            				</div>
-            				<div class="testimonial-text">
-                                <p>
-                                	"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
-                                	ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-                                	lobortis nisl ut aliquip ex ea commodo consequat..."<br>
-                                	<a href="#">Minim Veniam, nostrud.com</a>
-                                </p>
+                        </div>
+
+                        <div class="h5 font-weight-normal one-slide mx-auto">
+                            <div class="testimonial w-100 px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                <div class="message text-center blockquote w-100">
+                                    "Miami Beach Visitor and Convention Authority uses Solodev to craft a website capable of representing its diverse residents. The website features a newsroom with the latest events, an interactive calendar, and a mobile app that puts the resources of VCA at a user’s fingertips."
+                                </div>
+
+                                <div class="blockquote-footer w-100 text-white">Jim Joe, WebCorpCo</div>
                             </div>
-            			</div>
-            			<div role="tabpanel" class="tab-pane fade" id="tab3">
-            				<div class="testimonial-image">
-            					<img src="<?php echo get_theme_file_uri('img/testimonials/3.jpg'); ?>" alt="t3">
-            				</div>
-            				<div class="testimonial-text">
-                                <p>
-                                	"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-                                	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. 
-                                	Lorem ipsum dolor sit amet, consectetur..."<br>
-                                	<a href="#">Lorem Ipsum, dolor.co.uk</a>
-                                </p>
+                        </div>
+                        <div class="h5 font-weight-normal one-slide mx-auto">
+                            <div class="testimonial w-100 px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                                <div class="message text-center blockquote w-100">
+                                    Solodev is a great company to partner with! We are extremely happy with the software, service, and support.
+                                </div>
+
+                                <div class="blockquote-footer w-100 text-white">Jim Joe, WebCorpCo</div>
                             </div>
-            			</div>
-            			<div role="tabpanel" class="tab-pane fade" id="tab4">
-            				<div class="testimonial-image">
-            					<img src="<?php echo get_theme_file_uri('img/testimonials/4.jpg'); ?>" alt="t4">
-            				</div>
-            				<div class="testimonial-text">
-                                <p>
-                                	"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
-                                	ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-                                	lobortis nisl ut aliquip ex ea commodo consequat..."<br>
-                                	<a href="#">Minim Veniam, nostrud.com</a>
-                                </p>
-                            </div>
-            			</div>
-            		</div>
-            		<!-- Nav tabs -->
-            		<ul class="nav nav-tabs" role="tablist">
-            			<li role="presentation" class="active">
-            				<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
-            			</li>
-            			<li role="presentation">
-            				<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"></a>
-            			</li>
-            			<li role="presentation">
-            				<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab"></a>
-            			</li>
-            			<li role="presentation">
-            				<a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"></a>
-            			</li>
-            		</ul>
-            	</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 
 <?php get_footer(); ?>

@@ -20,8 +20,13 @@
 			$query->set('posts_per_page', -1);
 		}
 	}
+	
+	function website_features(){
+		add_theme_support( 'post-thumbnails' ); 
+	}
 
 	add_action('wp_enqueue_scripts', 'cdn_files');
 	add_action('wp_enqueue_scripts', 'custom_styles');
 	add_action('pre_get_posts', 'agency_adjust_queries');
+	add_action('after_setup_theme', 'website_features');
 ?>

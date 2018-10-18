@@ -72,7 +72,38 @@
 <hr class="w-75 my-5">
 
 <!-- Testimonials -->
+<div id="page-wrap">
+		
+	<h2>Start/Stop Slider</h2>
+	
+	<div id="slider">
+		<div id="mover">
+			<div id="slide-1" class="slide">
+				<h1>Garden Rack</h1>
+				
+				<p>Donec gravida posuere arcu. Nulla facilisi. Phasellus imperdiet. Vestibulum at metus. Integer euismod. Nullam placerat rhoncus sapien. Ut euismod. Praesent libero. Morbi pellentesque libero sit amet ante. Maecenas tellus.</p>
+				
+				<a href="#"><img src="images/slide-1-image.png" alt="learn more" /></a>
+			</div>
 
+			<div class="slide">
+				<h1>Tulip Bulbs</h1>
+				
+				<p>Donec gravida posuere arcu. Nulla facilisi. Phasellus imperdiet. Vestibulum at metus. Integer euismod. Nullam placerat rhoncus sapien. Ut euismod. Praesent libero. Morbi pellentesque libero sit amet ante. Maecenas tellus.</p>
+				
+				<a href="#"><img src="images/slide-2-image.png" alt="learn more" /></a>
+			</div>
+			
+			<div class="slide">
+				<h1>Garden Gloves</h1>
+				
+				<p>Donec gravida posuere arcu. Nulla facilisi. Phasellus imperdiet. Vestibulum at metus. Integer euismod. Nullam placerat rhoncus sapien. Ut euismod. Praesent libero. Morbi pellentesque libero sit amet ante. Maecenas tellus.</p>
+				
+				<a href="#"><img src="images/slide-3-image.png" alt="learn more" /></a>	
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <?php get_footer(); ?>

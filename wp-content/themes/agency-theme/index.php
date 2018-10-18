@@ -78,28 +78,28 @@
 	
 	<div id="slider">
 		<div id="mover">
-			<div id="slide-1" class="slide">
+			<div id="slide-1" class="testimonial">
 				<h1>Garden Rack</h1>
 				
 				<p>Donec gravida posuere arcu. Nulla facilisi. Phasellus imperdiet. Vestibulum at metus. Integer euismod. Nullam placerat rhoncus sapien. Ut euismod. Praesent libero. Morbi pellentesque libero sit amet ante. Maecenas tellus.</p>
 				
-				<a href="#"><img src="images/slide-1-image.png" alt="learn more" /></a>
+				<a href="#"><img src="<?php echo get_theme_file_uri('img/testimonials/1.jpg'); ?>" alt="learn more" /></a>
 			</div>
 
-			<div class="slide">
+			<div class="testimonial">
 				<h1>Tulip Bulbs</h1>
 				
 				<p>Donec gravida posuere arcu. Nulla facilisi. Phasellus imperdiet. Vestibulum at metus. Integer euismod. Nullam placerat rhoncus sapien. Ut euismod. Praesent libero. Morbi pellentesque libero sit amet ante. Maecenas tellus.</p>
 				
-				<a href="#"><img src="images/slide-2-image.png" alt="learn more" /></a>
+				<a href="#"><img src="<?php echo get_theme_file_uri('img/testimonials/2.jpg'); ?>" alt="learn more" /></a>
 			</div>
 			
-			<div class="slide">
+			<div class="testimonial">
 				<h1>Garden Gloves</h1>
 				
 				<p>Donec gravida posuere arcu. Nulla facilisi. Phasellus imperdiet. Vestibulum at metus. Integer euismod. Nullam placerat rhoncus sapien. Ut euismod. Praesent libero. Morbi pellentesque libero sit amet ante. Maecenas tellus.</p>
 				
-				<a href="#"><img src="images/slide-3-image.png" alt="learn more" /></a>	
+				<a href="#"><img src="<?php echo get_theme_file_uri('img/testimonials/3.jpg'); ?>" alt="learn more" /></a>	
 			</div>
 		</div>
 	</div>

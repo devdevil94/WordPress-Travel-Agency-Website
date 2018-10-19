@@ -8,8 +8,7 @@ body {
 }
 
 .h-container{
-	
-	background-image: url('../img/39390331741_56abc913e4_o.jpg');
+	/*background-color: #FFCA28;*/
 	background-size: cover;
  	background-position: center;
 	background-repeat: no-repeat;
@@ -41,74 +40,50 @@ body {
 /*/////////Testimonial Slider\\\\\\\\\*/
 
 
-.testimonial a{ 
-  text-decoration: none; 
-  outline: none; 
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
 }
-.testimonial a img{ 
-  border: none; 
-  width: 100px; 
-  height: 100px;
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
 }
-
-h2{ 
-  font-family: Georgia, Serif;
-  font-size: 36px;
-  text-align: center; 
-  font-weight: normal;
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
 }
-
-#page-wrap{ 
-  background: white; 
-  width: 960px; 
-  margin: 0 auto; 
-  padding: 50px 0; 
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
 }
-
-#slider { 
-  /*background: white url(../images/slider-bg.jpg);*/ 
-  height: 227px; overflow: hidden;
-  position: relative;
-  margin: 50px 0; 
-}               
-  /* DEFAULT is for three panels in width, adjust as needed
-  This only matters if JS is OFF, otherwise JS sets this. */                 
-#mover{
-  width: 2880px;
-  position: relative;
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
 }
-
-.testimonial{
-  padding: 40px 30px;
-  width: 900px; 
-  float: left;
-  position: relative; 
+.item blockquote {
+    border-left: none;
+    margin: 0;
 }
-.testimonial h1{ 
-  font-family: Helvetica, Sans-Serif;
-  font-size: 30px;
-  letter-spacing: -1px;
-  color: #ac0000; 
-}
-.testimonial p{ 
-  color: #999; 
-  font-size: 12px; 
-  line-height: 22px; 
-  width: 300px; 
-}
-.testimonial img{ 
-  position: absolute; 
-  top: 20px; 
-  left: 400px; 
-}
-#slider-stopper{ 
-  position: absolute; 
-  top: 1px; 
-  right: 20px; 
-  background: #ac0000; 
-  color: white;
-  padding: 3px 8px; 
-  font-size: 10px; 
-  text-transform: uppercase; 
-  z-index: 1000; 
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
 }

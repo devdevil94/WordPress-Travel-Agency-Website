@@ -7,7 +7,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<header class="h-container d-flex flex-column">
+		<header class="h-container d-flex flex-column" style="background-image: url(<?php echo get_theme_file_uri('/img/39390331741_56abc913e4_o.jpg'); ?>">
 			<a class="navbar-brand text-white" href="#">Omanova</a>
 
 			<div class="hero">

@@ -5,9 +5,6 @@
 		wp_enqueue_script('bootstrap-js','//code.jquery.com/jquery-3.3.1.slim.min.js', array( 'jquery' ), true);
 		wp_enqueue_style('font_awsome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 		wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Montserrat');
-
-		//wp_deregister_script( 'jquery' );
-		//wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', '', '3.3.1');
 	}
 
 	function custom_styles_scripts(){

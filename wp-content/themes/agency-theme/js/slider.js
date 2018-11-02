@@ -1,79 +1,22 @@
-// SET THIS VARIABLE FOR DELAY, 1000 = 1 SECOND
-var delayLength = 4000;
-	
-function doMove(panelWidth, tooFar) {
-	var leftValue = $("#mover").css("left");
-	
-	// Fix for IE
-	if (leftValue == "auto") { leftValue = 0; };
-	
-	var movement = parseFloat(leftValue, 10) - panelWidth;
-	
-	if (movement == tooFar) {
-		$(".testimonial img").animate({
-			"top": -200
-		}, function() {
-			$("#mover").animate({
-				"left": 0
-			}, function() {
-				$(".testimonial img").animate({
-					"top": 20
-				});
-			});
-		});
-	}
-	else {
-		$(".testimonial img").animate({
-			"top": -200
-		}, function() {
-			$("#mover").animate({
-				"left": movement
-			}, function() {
-				$(".testimonial img").animate({
-					"top": 20
-				});
-			});
-		});
-	}
-}
 
-$(function(){
-	
-    var $slide1 = $("#slide-1");
 
-	var panelWidth = $slide1.css("width");
-	var panelPaddingLeft = $slide1.css("paddingLeft");
-	var panelPaddingRight = $slide1.css("paddingRight");
+var prevButton = '<button type="button" data-role="none" class="slick-prev" aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"><path fill="#FFFFFF" d="M 16,16.46 11.415,11.875 16,7.29 14.585,5.875 l -6,6 6,6 z" /></svg></button>',
+    nextButton = '<button type="button" data-role="none" class="slick-next" aria-label="next"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M8.585 16.46l4.585-4.585-4.585-4.585 1.415-1.415 6 6-6 6z"></path></svg></button>';
 
-	panelWidth = parseFloat(panelWidth, 10);
-	panelPaddingLeft = parseFloat(panelPaddingLeft, 10);
-	panelPaddingRight = parseFloat(panelPaddingRight, 10);
+$('.single-item').slick({
+  infinite: true,
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  speed: 1000,
+  cssEase: 'ease-in-out',
+  prevArrow: prevButton,
+  nextArrow: nextButton
+});
 
-	panelWidth = panelWidth + panelPaddingLeft + panelPaddingRight;
-	
-	var numPanels = $(".testimonial").length;
-	var tooFar = -(panelWidth * numPanels);
-	var totalMoverwidth = numPanels * panelWidth;
-	$("#mover").css("width", totalMoverwidth);
-
-	$("#slider").append('<a href="#" id="slider-stopper">Stop</a>');
-
-	sliderIntervalID = setInterval(function(){
-		doMove(panelWidth, tooFar);
-	}, delayLength);
-	
-	$("#slider-stopper").click(function(){
-		if ($(this).text() == "Stop") {
-			clearInterval(sliderIntervalID);
-		 	$(this).text("Start");
-		}
-		else {
-			sliderIntervalID = setInterval(function(){
-				doMove(panelWidth, tooFar);
-			}, delayLength);
-		 	$(this).text("Stop");
-		}
-		 
-	});
-
+$('.quote-container').mousedown(function(){
+  $('.single-item').addClass('dragging');
+});
+$('.quote-container').mouseup(function(){
+  $('.single-item').removeClass('dragging');
 });

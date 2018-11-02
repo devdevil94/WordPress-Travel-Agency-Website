@@ -38,6 +38,10 @@
 
     	vladislav@munich (offline) <a href="http://www.flickr.com/photos/87602202@N03/41117494141">Sultan Qaboos Mosque</a> via <a href="http://photopin.com">photopin</a> <a href="https://creativecommons.org/licenses/by-nd/2.0/">(license)</a>
       Teseum <a href="http://www.flickr.com/photos/7415626@N04/39394819962">Muttrah port</a> via <a href="http://photopin.com">photopin</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">(license)</a>
+
+      https://pixabay.com/en/users/DzeeShah-481870/ (beautiful woman pic)
+      https://pixabay.com/en/users/brenkee-2021352/ (old man pic)
+      https://pixabay.com/en/users/theharpreetbatish-4973378/ (young man pic)
     </div>
 -->
 </footer>

@@ -15,6 +15,21 @@
 				'singular_name' => 'Package'),
 			'menu_icon' => 'dashicons-calendar' 
 		));
+
+		//Testimonial Post Type
+		register_post_type('testimonial', array( 
+			'has_archive' => true,
+			'supports' => array('title', 'editor', 'custom-fields', 'thumbnail'),
+			'rewrite' => array('slug' => 'testimonials'),
+			'public' => true,
+			'labels' => array(
+				'name' => 'Testimonials',
+				'add_new_item' => 'Add New Testimonial',
+				'edit_item' => 'Edit Testimonial',
+				'all_items' => 'All Testimonials',
+				'singular_name' => 'Testimonial'),
+			'menu_icon' => 'dashicons-businessman' 
+		));
 	}
 
 	add_action( 'init', 'agency_post_types');

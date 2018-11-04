@@ -23,7 +23,7 @@
 	function website_features(){
 		add_theme_support( 'post-thumbnails' );
 
-		add_image_size('testimonial', 80, 80, true);
+		add_image_size('testimonial-img', 80, 80, true);
 	}
 
 	add_action('wp_enqueue_scripts', 'cdn_files');

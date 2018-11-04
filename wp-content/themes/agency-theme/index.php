@@ -74,29 +74,27 @@
 <!-- Testimonials -->
 <section id="testimonials">
     <h2>Testimonials from our guests...</h2>
-    <div class="testimonial fade">
-       <img src="<?php echo get_theme_file_uri('/img/testimonials/man.jpg'); ?>" alt="">
-       <p class="quote">"Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-       <br>
-       <span class="guest">-John</span> 
-       </p>   
-    </div>
-    
-    <div class="testimonial fade">
-       <img src="<?php echo get_theme_file_uri('/img/testimonials/woman.jpg'); ?>" alt="">
-       <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua."
-       <br>
-       <span class="guest">-Jane</span> 
-       </p> 
-    </div>
-    
-    <div class="testimonial fade">
-       <img src="<?php echo get_theme_file_uri('/img/testimonials/elder-man.jpg'); ?>" alt="">
-       <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-       <br>
-       <span class="guest">-Luke</span> 
-       </p>
-    </div>
+
+	<?php 
+		$testimonials = new WP_Query(array(
+			'posts_per_page' => 3,
+			'post_type' => 'testimonial')
+		);
+
+		while ($testimonials->have_posts()) {
+			$testimonials->the_post();
+	?>
+		    <div class="testimonial fade">
+		       <div><?php the_post_thumbnail('testimonial-img'); ?></div>
+		       <p class="quote">
+		       	<?php echo '"'.get_field('quote').'"'; ?>
+		       <br>
+		       <span class="guest"><?php echo get_field('guest_name'); ?></span> 
+		       </p>   
+		    </div>
+    <?php
+		}
+    ?>
     
     <div id="t-dots-container">
         <span class="t-dot" onclick="currentTestimonial(1)"></span> 

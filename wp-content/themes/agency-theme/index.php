@@ -72,44 +72,38 @@
 <hr class="w-75 my-5">
 
 <!-- Testimonials -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<div class="img-container">
-				<img class="d-block mw-100" src="<?php echo get_theme_file_uri('img/testimonials/man.jpg'); ?>">
-			</div>
-			<div class="carousel-caption d-none d-md-block">
-				<h5>...</h5>
-				<p>...</p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block" src="<?php echo get_theme_file_uri('img/testimonials/elder-man.jpg'); ?>">
-			<div class="carousel-caption d-none d-md-block">
-				<h5>...</h5>
-				<p>...</p>
-			</div>
-		</div>
-		<div class="carousel-item">
-		  <img class="d-block" src="<?php echo get_theme_file_uri('img/testimonials/woman.jpg'); ?>">
-		  <div class="carousel-caption d-none d-md-block">
-				<h5>...</h5>
-				<p>...</p>
-			</div>
-		</div>
-	</div>
-
-	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	</a>
-
-	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	</a>
-</div><!--end of container-->
+<section id="testimonials">
+    <h2>Testimonials from our guests...</h2>
+    <div class="testimonial fade">
+       <img src="<?php echo get_theme_file_uri('/img/testimonials/man.jpg'); ?>" alt="">
+       <p class="quote">"Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+       <br>
+       <span class="guest">-John</span> 
+       </p>   
+    </div>
+    
+    <div class="testimonial fade">
+       <img src="<?php echo get_theme_file_uri('/img/testimonials/woman.jpg'); ?>" alt="">
+       <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua."
+       <br>
+       <span class="guest">-Jane</span> 
+       </p> 
+    </div>
+    
+    <div class="testimonial fade">
+       <img src="<?php echo get_theme_file_uri('/img/testimonials/elder-man.jpg'); ?>" alt="">
+       <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+       <br>
+       <span class="guest">-Luke</span> 
+       </p>
+    </div>
+    
+    <div id="t-dots-container">
+        <span class="t-dot" onclick="currentTestimonial(1)"></span> 
+        <span class="t-dot" onclick="currentTestimonial(2)"></span> 
+        <span class="t-dot" onclick="currentTestimonial(3)"></span> 
+    </div>
+</section>
 
 
 <?php get_footer(); ?>

@@ -17,9 +17,8 @@
 		));
 
 		//Testimonial Post Type
-		register_post_type('testimonial', array( 
-			'has_archive' => true,
-			'supports' => array('title', 'editor', 'custom-fields', 'thumbnail'),
+		register_post_type('testimonial', array(
+			'supports' => array('custom-fields', 'thumbnail'),
 			'rewrite' => array('slug' => 'testimonials'),
 			'public' => true,
 			'labels' => array(
@@ -31,6 +30,6 @@
 			'menu_icon' => 'dashicons-businessman' 
 		));
 	}
-
+	//'title', 'editor',
 	add_action( 'init', 'agency_post_types');
 ?>

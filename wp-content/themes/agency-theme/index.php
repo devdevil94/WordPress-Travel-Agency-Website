@@ -77,34 +77,50 @@
 <hr class="w-75 my-5">
 
 <!-- Testimonials -->
-<section id="testimonials">
+<section>
     <h2>Testimonials from our guests...</h2>
 
 	<?php 
 		$testimonials = new WP_Query(array(
 			'posts_per_page' => 3,
 			'post_type' => 'testimonial')
-		);
-
-		while ($testimonials->have_posts()) {
-			$testimonials->the_post();
+		); 
 	?>
-		    <div class="testimonial fade">
-		       <div><?php the_post_thumbnail('testimonial-img'); ?></div>
-		       <p class="quote">
-		       	<?php echo '"'.get_field('quote').'"'; ?>
-		       <br>
-		       <span class="guest"><?php echo get_field('guest_name'); ?></span> 
-		       </p>   
-		    </div>
-    <?php
-		}
-    ?>
-    
-    <div id="t-dots-container">
-        <span class="t-dot" onclick="currentTestimonial(1)"></span> 
-        <span class="t-dot" onclick="currentTestimonial(2)"></span> 
-        <span class="t-dot" onclick="currentTestimonial(3)"></span> 
+	<div class="container">
+		
+		<div id="testimonialsSliderIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">	
+				<?php
+				$count = 0;
+				while ($testimonials->have_posts()) {
+					$testimonials->the_post(); ?>
+					<li data-target="#testimonialsSliderIndicators" data-slide-to="<?php echo $count; ?>"
+						<?php if($count == 0) echo 'class="active"' ?> ></li>
+				<?php
+					$count++;
+				} ?>
+			</ol>
+			<div class="carousel-inner">
+			<?php
+			$count = 0;
+				while ($testimonials->have_posts()) {
+					$testimonials->the_post(); ?>		
+				    <div class="carousel-item <?php if($count == 0) echo ' active'; ?>">
+				    	<img class="d-block w-100" src="<?php the_post_thumbnail('testimonial-img'); ?>" alt="Thumbnail">
+				       	<div class="carousel-caption d-none d-md-block">
+		    				<p class="quote">
+		    					<?php echo '"'.get_field('quote').'"'; ?>
+	    						<br>
+	    						<span class="guest"><?php echo get_field('guest_name'); ?></span> 
+		    				</p>
+		    				
+		  				</div> 
+				    </div>
+			    <?php
+			    	$count++;
+				} ?>
+	    </div>
+	    	
     </div>
 </section>
 
